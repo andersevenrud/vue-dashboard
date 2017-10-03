@@ -1,0 +1,52 @@
+{
+  "name": "vue-dashboard",
+  "version": "0.0.1",
+  "description": "A Vue Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint src/*.js bin/*.js src/panels/**/*.js",
+    "stylelint": "stylelint src/**/*.scss",
+    "panels": "node bin/make-exports.js",
+    "serve": "nodemon --delay 5 --watch src/server.js --watch src/panels --ignore component.js index.js",
+    "serve production": "NODE_ENV=production node index.js",
+    "build": "webpack",
+    "build production": "NODE_ENV=production webpack",
+    "watch": "webpack --watch",
+    "postinstall": "node bin/install-deps.js"
+  },
+  "author": "Anders Evenrud <andersevenrud@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.8.0",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.4",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "socket.io-client": "^2.0.3",
+    "style-loader": "^0.19.0",
+    "stylelint": "^8.1.1",
+    "stylelint-config-standard": "^17.0.0",
+    "vue": "^2.4.4",
+    "vue-loader": "^13.0.5",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-livereload-plugin": "^1.0.0",
+    "webpack-notifier": "^1.5.0"
+  },
+  "dependencies": {
+    "socket.io": "^2.0.3",
+    "bluebird": "^3.5.0",
+    "debug": "^3.1.0",
+    "express": "^4.16.1",
+    "fs-extra": "^4.0.2",
+    "moment": "^2.18.1",
+    "nodemon": "^1.12.1"
+  }
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "name": "today",
+    "position": "a1",
+    "settings": {
+      "time": "hh:mm",
+      "date": "MMMM Do YYYY"
+    },
+    "options": {
+      "location": "Oslo,NO",
+      "key": ""
+    }
+  },
+  {
+    "name": "imap",
+    "position": "b1",
+    "settings": {
+    },
+    "options": {
+      "count": 20,
+      "imap": {
+        "user": "username@gmail.com",
+        "password": "password",
+        "host": "imap.gmail.com",
+        "port": 993,
+        "tls": true
+      }
+    }
+  },
+  {
+    "name": "lmsensors",
+    "position": "a2:b2",
+    "settings": {
+      "title": "CPU Fan"
+    },
+    "options": {
+      "adapter": "nct6791-isa-0290",
+      "sensor": "fan2"
+    }
+  },
+  {
+    "name": "lmsensors",
+    "position": "a3:b2",
+    "settings": {
+      "title": "CPU Temperature"
+    },
+    "options": {
+      "adapter": "nct6791-isa-0290",
+      "sensor": "CPUTIN"
+    }
+  },
+  {
+    "name": "cmd",
+    "position": "c1:c2",
+    "settings": {
+    },
+    "options": {
+      "command": "journalctl -n100 -r"
+    }
+  },
+  {
+    "name": "gitlab",
+    "position": "c3:c3",
+    "settings": {
+    },
+    "options": {
+      "url": "https://gitlab.com",
+      "token": ""
+    }
+  }
+]

@@ -1,0 +1,7 @@
+*.tern*
+*.swp
+*.log
+.env
+node_modules/
+/src/panels/*.js
+/panels.json
