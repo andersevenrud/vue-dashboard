@@ -4,6 +4,8 @@ A simple Vue Dashboard running on Express (socket.io) with pluggable panels.
 
 *Please note that this is an alpha*
 
+![Screenshot](https://i.imgur.com/sLutKWf.jpg)
+
 ## Requirements
 
 Node 6+
