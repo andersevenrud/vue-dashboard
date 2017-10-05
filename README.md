@@ -1,8 +1,8 @@
 # Vue Dashboard
 
-A simple Vue Dashboard running on Express (socket.io) with pluggable panels.
+A simple dashboard running on Vue, CSS Grid, Express and Socket.IO with pluggable panels.
 
-*Please note that this is an alpha*
+**Please note that this is an alpha**
 
 ![Screenshot](https://i.imgur.com/sLutKWf.jpg)
 
@@ -40,7 +40,7 @@ npm serve
 ```
 npm run test
 npm run eslint
-npm run csslint
+npm run stylelint
 ```
 
 ## License
