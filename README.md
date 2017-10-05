@@ -11,7 +11,6 @@ Node 6+
 ## Installation
 
 ```
-cp .env.example .env
 npm install
 npm run panels
 npm run build production
@@ -22,7 +21,7 @@ npm serve production
 
 See `panels.example.json` for an example.
 
-To install a bundle, put it in `src/bundles` and run `npm install && npm run panels`, then rebuild.
+To install a panel, put it in `src/panels` and run `npm install && npm run panels`, then rebuild.
 
 ## Development
 
